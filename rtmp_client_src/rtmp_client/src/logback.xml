@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{ISO8601} [%p] %logger +[%L] - %msg%n</pattern>
+		</encoder>		
+	</appender>
+	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
+		<File>log/rtmpclient.log</File>
+		<Append>false</Append>
+		<encoder>
+			<pattern>%d{ISO8601} [%thread] %-5level %logger{35} - %msg%n</pattern>
+		</encoder>		
+	</appender>
+	<appender name="ERRORFILE" class="ch.qos.logback.core.FileAppender">
+		<File>log/error.log</File>
+		<Append>false</Append>
+    	<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      		<level>WARN</level>
+    	</filter>
+		<encoder>
+			<pattern>%d{ISO8601} [%thread] %-5level %logger{35} - %msg%n</pattern>
+		</encoder>		
+	</appender>
+	<root>
+		<level value="ERROR" />
+		<appender-ref ref="CONSOLE" />
+		<appender-ref ref="FILE" />
+		<appender-ref ref="ERRORFILE" />
+	</root>
+	<logger name="com.ryong21.example.recorder">
+		<level value="TRACE" />
+	</logger>
+	<logger name="org.red5.io">
+		<level value="DEBUG" />
+	</logger>
+	<logger name="org.red5.io.flv">
+		<level value="ERROR"/>
+	</logger>
+	<logger name="org.red5.server">
+		<level value="TRACE" />
+	</logger>
+	<logger name="org.red5.server.messaging.InMemoryPushPushPipe">
+		<level value="INFO" />
+	</logger>
+	<logger name="org.red5.server.net">
+		<level value="TRACE" />
+	</logger>
+	<logger name="org.red5.server.net.rtmp">
+		<level value="DEBUG" />
+	</logger>	
+	<logger name="org.red5.server.net.rtmp.RTMPHandler">
+		<level value="DEBUG" />
+	</logger>
+	<logger name="org.red5.server.net.rtmp.BaseRTMPHandler">
+		<level value="DEBUG" />
+	</logger>
+	<logger name="org.red5.server.net.rtmp.codec">
+		<level value="INFO" />
+	</logger>
+	<logger name="org.red5.server.net.rtmp.RTMPMinaIoHandler">
+		<level value="DEBUG" />
+	</logger>
+	<logger name="org.red5.server.net.rtmp.RTMPMinaTransport">
+		<level value="DEBUG" />
+	</logger>
+	<logger name="org.red5.server.net.rtmp.status">
+		<level value="TRACE" />
+	</logger>	
+	<logger name="org.red5.server.service">
+		<level value="TRACE" />
+	</logger>
+	<logger name="org.red5.server.so">
+		<level value="WARN" />
+	</logger>
+	<logger name="org.red5.server.stream">
+		<level value="TRACE" />
+	</logger>	
+	<logger name="org.red5.server.stream.consumer">
+		<level value="DEBUG" />
+	</logger>
+	<logger name="org.apache.mina">
+		<level value="WARN" />
+	</logger>	
+	<logger name="org.apache.mina.filter">
+		<level value="WARN" />
+	</logger>
+	<logger name="ch.qos">
+		<level value="WARN" />
+	</logger>
+</configuration>
