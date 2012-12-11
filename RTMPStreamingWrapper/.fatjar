@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Fri Dec 07 12:46:02 IST 2012
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=RTMPStreamingWrapper.jar
+manifest.mergeall=true
+manifest.mainclass=
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=<po|RTMPStreamingWrapper>~wrapper/~RTMPStreaming.jar
+includes=

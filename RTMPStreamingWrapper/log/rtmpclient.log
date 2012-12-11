@@ -1,0 +1,49 @@
+2012-12-07 12:35:37,086 [main] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - connect server: uni3rtmp.tulix.tv port 1935 connect - params: {app=caturra1, flashVer=FMLE/3.0 (compatible; FMSC/1.0), tcUrl=rtmp://uni3rtmp.tulix.tv:1935/caturra1, type=nonprivate, swfUrl=rtmp://uni3rtmp.tulix.tv:1935/caturra1} callback: rtmp.RtmpClientManager@17aece8 args: null
+2012-12-07 12:35:37,110 [main] INFO  o.r.s.n.rtmp.BaseRTMPClientHandler - rtmp://uni3rtmp.tulix.tv:1935/caturra1
+2012-12-07 12:35:37,651 [NioProcessor-2] DEBUG o.r.s.net.rtmp.RTMPMinaIoHandler - Session created
+2012-12-07 12:35:37,706 [NioProcessor-2] DEBUG o.r.s.n.rtmp.RTMPClientConnManager - Creating connection, class: org.red5.server.net.rtmp.RTMPMinaConnection
+2012-12-07 12:35:37,708 [NioProcessor-2] DEBUG org.red5.server.BaseConnection - New BaseConnection - type: persistent
+2012-12-07 12:35:37,708 [NioProcessor-2] DEBUG o.r.s.net.rtmp.RTMPMinaConnection - RTMPMinaConnection created
+2012-12-07 12:35:37,708 [NioProcessor-2] DEBUG o.r.s.n.rtmp.RTMPClientConnManager - Connection id set 1
+2012-12-07 12:35:37,708 [NioProcessor-2] DEBUG o.r.s.n.rtmp.RTMPClientConnManager - Connection added to the map
+2012-12-07 12:35:37,709 [NioProcessor-2] DEBUG o.r.server.net.rtmp.RTMPConnection - Set state: RTMP [state=connect, client-mode=true, debug=false, encrypted=false, lastReadChannel=0, lastWriteChannel=0, readHeaders={}, writeHeaders={}, readPacketHeaders={}, readPackets={}, writePackets={}, writeTimestamps={}, liveTimestamps={}, readChunkSize=128, writeChunkSize=128, encoding=AMF0]
+2012-12-07 12:35:37,755 [NioProcessor-2] DEBUG o.r.server.net.rtmp.RTMPHandshake - Handshake ctor
+2012-12-07 12:35:38,254 [NioProcessor-2] DEBUG o.r.s.net.rtmp.RTMPMinaIoHandler - Session opened
+2012-12-07 12:35:38,255 [NioProcessor-2] DEBUG o.r.s.net.rtmp.RTMPMinaIoHandler - Handshake - client phase 1
+2012-12-07 12:35:38,255 [NioProcessor-2] DEBUG o.r.server.net.rtmp.RTMPHandshake - generateClientRequest1
+2012-12-07 12:35:38,563 [NioProcessor-2] TRACE o.r.server.net.rtmpe.RTMPEIoFilter - Handshake exists on the session
+2012-12-07 12:35:38,564 [NioProcessor-2] TRACE o.r.server.net.rtmpe.RTMPEIoFilter - Handshake type is not currently set
+2012-12-07 12:35:38,586 [NioProcessor-2] TRACE o.r.server.net.rtmpe.RTMPEIoFilter - Handshake exists on the session
+2012-12-07 12:35:38,593 [NioProcessor-2] DEBUG o.r.s.net.rtmp.RTMPMinaIoHandler - state: RTMP [state=connected, client-mode=true, debug=false, encrypted=false, lastReadChannel=0, lastWriteChannel=0, readHeaders={}, writeHeaders={}, readPacketHeaders={}, readPackets={}, writePackets={}, writeTimestamps={}, liveTimestamps={}, readChunkSize=128, writeChunkSize=128, encoding=AMF0]
+2012-12-07 12:35:38,593 [NioProcessor-2] DEBUG o.r.s.net.rtmp.RTMPMinaIoHandler - Handshake - client phase 2 - size: 3073
+2012-12-07 12:35:38,593 [NioProcessor-2] DEBUG o.r.server.net.rtmp.RTMPHandshake - Handshake type: 3
+2012-12-07 12:35:38,593 [NioProcessor-2] DEBUG o.r.server.net.rtmp.RTMPHandshake - generateClientRequest2
+2012-12-07 12:35:38,594 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - connectionOpened
+2012-12-07 12:35:38,596 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - Writing 'connect' invoke: Invoke: Service: null Method: connect No params, invokeId: 1
+2012-12-07 12:35:39,154 [NioProcessor-2] TRACE o.r.server.net.rtmpe.RTMPEIoFilter - Handshake exists on the session
+2012-12-07 12:35:39,154 [NioProcessor-2] DEBUG o.r.server.net.rtmpe.RTMPEIoFilter - In connected state
+2012-12-07 12:35:39,154 [NioProcessor-2] DEBUG o.r.server.net.rtmpe.RTMPEIoFilter - Using non-encrypted communications
+2012-12-07 12:35:39,158 [NioProcessor-2] DEBUG org.red5.io.amf.Input - key version is causing non normal array
+2012-12-07 12:35:39,159 [NioProcessor-2] DEBUG o.r.server.net.rtmp.BaseRTMPHandler - Server bandwidth: ServerBW: 2500000
+2012-12-07 12:35:39,159 [NioProcessor-2] DEBUG o.r.server.net.rtmp.BaseRTMPHandler - Client bandwidth: ClientBW: 2500000 value2: 2
+2012-12-07 12:35:39,160 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - onChunkSize
+2012-12-07 12:35:39,160 [NioProcessor-2] INFO  o.r.s.n.rtmp.BaseRTMPClientHandler - ChunkSize is not implemented yet: ChunkSize: 4096
+2012-12-07 12:35:39,160 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - onInvoke: Invoke: Service: null Method: _result Num Params: 1 0: {clientid=1135593144, objectEncoding=0, level=status, description=Connection succeeded., data={version=3,5,7,7009}, code=NetConnection.Connect.Success}, invokeId: 1
+2012-12-07 12:35:39,160 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - Received result for pending call Service: null Method: connect No params
+2012-12-07 12:35:39,160 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - createStream - callback: rtmp.RtmpClientManager@17aece8
+2012-12-07 12:35:39,161 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - CreateStreamCallBack rtmp.RtmpClientManager
+2012-12-07 12:35:39,749 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - onInvoke: Invoke: Service: null Method: _result Num Params: 1 0: 1, invokeId: 2
+2012-12-07 12:35:39,749 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - Received result for pending call Service: null Method: createStream No params
+2012-12-07 12:35:39,749 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - Stream id: 1
+2012-12-07 12:35:39,750 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - CreateStreamCallBack resultReceived - stream id: 1
+2012-12-07 12:35:39,750 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - Setting new net stream
+2012-12-07 12:35:39,754 [NioProcessor-2] DEBUG o.r.s.s.consumer.ConnectionConsumer - Channel ids - video: 5 audio: 6 data: 4
+2012-12-07 12:35:39,755 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - streamDataMap: {1=org.red5.server.net.rtmp.BaseRTMPClientHandler$NetStreamPrivateData@95215b}
+2012-12-07 12:35:39,755 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - publish - stream id: 1, name: test, mode: caturra1
+2012-12-07 12:35:39,756 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - Setting handler on stream data - handler: rtmp.RtmpClientManager@17aece8
+2012-12-07 12:35:40,305 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - onInvoke: Invoke: Service: null Method: onStatus Num Params: 1 0: {clientid=1135593144, level=status, description=Publishing test., code=NetStream.Publish.Start}, invokeId: 0
+2012-12-07 12:35:40,306 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - onStatus true
+2012-12-07 12:35:40,306 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - Client id at onStatus: 1135593144
+2012-12-07 12:35:40,306 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - Client/stream id: 1135593144
+2012-12-07 12:35:40,306 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - Stream data map: {1=org.red5.server.net.rtmp.BaseRTMPClientHandler$NetStreamPrivateData@95215b}
+2012-12-07 12:35:40,306 [NioProcessor-2] DEBUG o.r.s.n.rtmp.BaseRTMPClientHandler - Pending call result is: null
